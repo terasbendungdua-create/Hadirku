@@ -1,0 +1,6 @@
+{
+  "name": "HadirKu - Sistem Absensi Digital Siswa SD",
+  "description": "Aplikasi absensi digital siswa sekolah dasar (SD) modern dengan manajemen kelas 1-6, siswa, absensi harian, grafik statistik interaktif, dan ekspor laporan cetak/Excel/PDF.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
