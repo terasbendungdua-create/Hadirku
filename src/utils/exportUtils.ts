@@ -43,7 +43,9 @@ export const exportUtils = {
 
     // Create Worksheet
     const worksheet = XLSX.utils.aoa_to_sheet([
-      [`LAPORAN ABSENSI HARIAN SISWA - ${profile.name.toUpperCase()}`],
+      [`PEMERINTAH KABUPATEN SERANG`],
+      [`${profile.name.toUpperCase()}`],
+      [`LAPORAN ABSENSI HARIAN SISWA`],
       [`Tanggal: ${date} | Kelas: ${className} | Wali Kelas: ${homeroom}`],
       [`Tahun Ajaran: ${profile.academicYear} | Semester: ${profile.semester}`],
       [
@@ -52,8 +54,8 @@ export const exportUtils = {
       [],
     ]);
 
-    // Append table data starting from A7
-    XLSX.utils.sheet_add_json(worksheet, dataRows, { origin: 'A7' });
+    // Append table data starting from A8
+    XLSX.utils.sheet_add_json(worksheet, dataRows, { origin: 'A8' });
 
     // Auto column widths
     worksheet['!cols'] = [
@@ -118,14 +120,16 @@ export const exportUtils = {
     });
 
     const worksheet = XLSX.utils.aoa_to_sheet([
-      [`REKAPITULASI ABSENSI BULANAN SISWA - ${profile.name.toUpperCase()}`],
+      [`PEMERINTAH KABUPATEN SERANG`],
+      [`${profile.name.toUpperCase()}`],
+      [`REKAPITULASI ABSENSI BULANAN SISWA`],
       [`Bulan: ${monthName} | Kelas: ${className} | Wali Kelas: ${homeroom}`],
       [`Tahun Ajaran: ${profile.academicYear} | Semester: ${profile.semester}`],
       [],
     ]);
 
-    // Append table data starting from A6
-    XLSX.utils.sheet_add_json(worksheet, dataRows, { origin: 'A6' });
+    // Append table data starting from A7
+    XLSX.utils.sheet_add_json(worksheet, dataRows, { origin: 'A7' });
 
     worksheet['!cols'] = [
       { wch: 6 },  // No

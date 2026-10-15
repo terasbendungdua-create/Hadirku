@@ -410,16 +410,41 @@ export const ReportView: React.FC<ReportViewProps> = ({
       <div className="bg-white rounded-2xl border border-slate-200/90 shadow-xs p-6 sm:p-8">
         {/* Kop Surat Resmi Sekolah (Standar Indonesia) */}
         <div className="border-b-4 border-double border-slate-900 pb-4 mb-6">
-          <div className="text-center space-y-0.5">
-            <h2 className="text-lg sm:text-xl font-extrabold uppercase tracking-wide text-slate-900">
-              {profile.name}
-            </h2>
-            <p className="text-xs sm:text-sm text-slate-600">
-              NPSN: {profile.npsn} • {profile.address}, {profile.city}
-            </p>
-            <p className="text-xs text-slate-500">
-              Telp: {profile.phone} | Email: {profile.email}
-            </p>
+          <div className="flex items-center justify-between gap-4">
+            {/* Logo Pemerintah Kabupaten Serang */}
+            <div className="w-20 sm:w-24 shrink-0 flex items-center justify-center">
+              <img
+                src="/src/assets/images/regenerated_image_1792031303572.png"
+                alt="Logo Pemerintah Kabupaten Serang"
+                referrerPolicy="no-referrer"
+                className="w-18 sm:w-22 h-auto max-h-24 sm:max-h-28 object-contain drop-shadow-xs"
+              />
+            </div>
+
+            {/* Header Text */}
+            <div className="flex-1 text-center space-y-0.5">
+              <h3
+                style={{ fontSize: '31px', fontFamily: 'Arial', height: '36.5px' }}
+                className="font-bold uppercase tracking-widest text-slate-800"
+              >
+                PEMERINTAH KABUPATEN SERANG
+              </h3>
+              <h2
+                style={{ fontFamily: 'Arial', height: '29.987499999999997px' }}
+                className="text-xl sm:text-2xl font-black uppercase tracking-wide text-slate-900"
+              >
+                {profile.name}
+              </h2>
+              <p className="text-xs sm:text-sm text-slate-600 mt-1">
+                NPSN: {profile.npsn} • {profile.address}, {profile.city}
+              </p>
+              <p className="text-xs text-slate-500">
+                Telp: {profile.phone} | Email: {profile.email}
+              </p>
+            </div>
+
+            {/* Symmetrical Spacer for perfect center alignment */}
+            <div className="w-20 sm:w-24 shrink-0 hidden sm:block" />
           </div>
         </div>
 
