@@ -417,7 +417,8 @@ export const ReportView: React.FC<ReportViewProps> = ({
                 src="/src/assets/images/regenerated_image_1792031303572.png"
                 alt="Logo Pemerintah Kabupaten Serang"
                 referrerPolicy="no-referrer"
-                className="w-18 sm:w-22 h-auto max-h-24 sm:max-h-28 object-contain drop-shadow-xs"
+                style={{ height: '93.95px' }}
+                className="w-auto object-contain drop-shadow-xs"
               />
             </div>
 
